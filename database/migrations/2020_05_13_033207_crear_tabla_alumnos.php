@@ -36,6 +36,8 @@ class CrearTablaAlumnos extends Migration
 
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

@@ -28,6 +28,8 @@ class CrearTablaGrados extends Migration
 
             $table->index(['nivel_id', 'anio_id', 'seccion']);
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

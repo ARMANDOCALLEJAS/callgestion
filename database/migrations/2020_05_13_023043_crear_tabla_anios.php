@@ -20,6 +20,8 @@ class CrearTablaAnios extends Migration
             $table->boolean('editable');
             $table->boolean('estado');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

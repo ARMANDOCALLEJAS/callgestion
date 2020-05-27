@@ -17,6 +17,8 @@ class CrearTablaDepartamentos extends Migration
             $table->bigIncrements('id');
             $table->string('nombe',100);
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

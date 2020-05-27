@@ -20,6 +20,8 @@ class CrearTablaNiveles extends Migration
             $table->string('descripcion',50);
             $table->boolean('estado');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

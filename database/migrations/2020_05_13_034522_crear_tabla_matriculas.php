@@ -24,6 +24,8 @@ class CrearTablaMatriculas extends Migration
             $table->foreign('alumno_id')->references('id')->on('alumnos');
             $table->foreign('grado_id')->references('id')->on('grados');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

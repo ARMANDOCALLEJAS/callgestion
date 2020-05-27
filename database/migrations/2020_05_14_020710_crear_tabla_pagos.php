@@ -21,6 +21,8 @@ class CrearTablaPagos extends Migration
 
             $table->foreign('anio_id')->references('id')->on('anios');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

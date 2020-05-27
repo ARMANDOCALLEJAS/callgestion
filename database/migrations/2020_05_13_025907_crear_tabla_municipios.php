@@ -19,6 +19,8 @@ class CrearTablaMunicipios extends Migration
             $table->string('nombre', 100);
             $table->foreign('departamento_id')->references('id')->on('departamentos');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

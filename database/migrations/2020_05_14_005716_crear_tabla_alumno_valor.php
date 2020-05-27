@@ -27,6 +27,8 @@ class CrearTablaAlumnoValor extends Migration
             $table->foreign('valor_id')->references('id')->on('valores');
             $table->foreign('grado_id')->references('id')->on('grados');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 

@@ -25,6 +25,8 @@ class CrearTablaEvaluaciones extends Migration
             $table->foreign('grado_id')->references('id')->on('grados');
             $table->foreign('materia_id')->references('id')->on('materias');
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 
